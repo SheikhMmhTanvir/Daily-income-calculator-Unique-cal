@@ -1,32 +1,42 @@
-# Prerequisites
-*.d
+#include<iostream>
+using namespace std;
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
+int main ()
+{
+    int DeilyIncome, MounthlyIncome, DeilyCost, MounthlyCost, MounthlySave ;
+    cout<< "Enter your Daliy Income: ";
+    cin >> DeilyIncome ;
+    cout << ""<< endl;
+    MounthlyIncome = DeilyIncome * 30;
+    cout << "Your Mounthly Income: "<< MounthlyIncome <<endl;
+    cout << ""<< endl;
+    cout << ""<< endl;
+    cout << "Your Deily Cost :";
+    cin >> DeilyCost;
+    cout << ""<< endl;
+    MounthlyCost = DeilyCost * 30;
+    cout << "Your Moynthly Cost : " << MounthlyCost << endl;
+    cout << ""<< endl;
+    cout << ""<< endl;
+    MounthlySave = MounthlyIncome - MounthlyCost;
+    if(MounthlySave > 0){
+    cout << " Save This Mounth : " << MounthlySave << endl;
+    }
+    else{
+        cout<<"Extra Need for this Mounth:"<< MounthlySave<< endl;
+    }
+    cout << ""<< endl;
+    cout << ""<< endl;
+    if(MounthlyIncome > MounthlyCost)
+    {
+        cout << "Your Managment Is Parpect" << endl;
+    }
+    else 
+    {
+        cout << " Your Managment Is Not Parpect" << endl;
+    }
+    cout << ""<< endl;
+    cout << ""<< endl;
+    cout << "**********This program make by Sheikh  Tanvir*******";
+    return 0;
+}
